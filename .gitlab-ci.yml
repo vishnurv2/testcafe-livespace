@@ -1,0 +1,15 @@
+e2e_tests:
+  stage: test
+  image: node:12.18.3
+  before_script:
+    - |
+      export LT_USERNAME=vishnurv2
+      export LT_ACCESS_KEY=2dEK8rin7XC3cChRqccFoMlcC9FwPNloQdqV9c4y7vFUAnAB18
+      export LT_RESOLUTION="1280x1024"
+      export TESTCAFE_SLACK_CHANNEL='automation-reports'
+      export TESTCAFE_SLACK_USERNAME=TestCafeReport
+      export TESTCAFE_SLACK_LOGGING_LEVEL=SUMMARY
+      npm install
+  script:
+    - npx testcafe -v
+    - node test.js

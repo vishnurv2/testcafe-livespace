@@ -1,0 +1,23 @@
+{
+    "disableMultipleWindows": true,
+    "src": "firstTest.js",
+    "browsers": "chrome",
+    "screenshots": {
+        "path": "reports/screenshots",
+        "takeOnFails": true
+    },
+    "reporter": [
+        {
+            "name": "spec"
+        },
+        {
+            "name": "html",
+            "output": "reports/testReport.html"
+        },
+        {
+            "name": "slack-custom"
+        }
+    ],
+    "skipUncaughtErrors": true,
+    "skipJsErrors": true
+}
