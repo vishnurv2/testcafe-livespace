@@ -21,7 +21,7 @@ const runTest = async browser => {
       testcafe = tc;
       const runner = testcafe.createRunner();
       return runner
-        .src(['tests\plainTest.js'])
+        .src(['sample.js'])
         .browsers(browser)
         .run();
     })
