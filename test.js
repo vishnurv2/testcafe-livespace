@@ -6,6 +6,12 @@ const browsers = [
   "lambdatest:Chrome@90.0:Windows 10",
   "lambdatest:Chrome@89.0:Windows 10",
   "lambdatest:Firefox@89.0:Windows 10",
+  "lambdatest:Chrome@89.0:Windows 10",
+  "lambdatest:Chrome@90.0:Windows 10",
+  "lambdatest:Chrome@89.0:Windows 10",
+  "lambdatest:Firefox@89.0:Windows 10",
+  "lambdatest:Chrome@89.0:Windows 10",
+  "lambdatest:Firefox@89.0:Windows 10",
    ],
 ];
 const runTest = async browser => {
